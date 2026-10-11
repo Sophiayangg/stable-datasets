@@ -39,6 +39,7 @@ from .not_mnist import NotMNIST
 # from .mnist import MNIST
 # from .places365_small import Places365Small
 from .rock_paper_scissor import RockPaperScissor
+from .semeion import Semeion
 from .shapes3d import Shapes3D
 from .small_norb import SmallNORB
 from .stl10 import STL10
@@ -82,6 +83,7 @@ __all__ = [
     "MedMNIST",
     "NotMNIST",
     "RockPaperScissor",
+    "Semeion",
     "Shapes3D",
     "SmallNORB",
     "STL10",

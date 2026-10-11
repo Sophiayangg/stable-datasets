@@ -314,6 +314,7 @@ DATASET_CONFIGS: dict[str, DatasetConfig] = {
         builder_kwargs={"config_name": "organsmnist"},
     ),
     "notmnist": _gray("notmnist", "NotMNIST", 10, mean=[0.4178], std=[0.4532]),
+    "semeion": _gray("semeion", "Semeion", 10, mean=[0.5], std=[0.5]),
     "hasyv2": _gray(
         "hasyv2",
         "HASYv2",
