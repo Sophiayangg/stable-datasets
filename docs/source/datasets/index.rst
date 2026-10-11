@@ -71,6 +71,7 @@ Available Datasets
    face_pointing
    rock_paper_scissor
    linnaeus5
+   horse_or_human
 
 .. toctree::
    :maxdepth: 1
