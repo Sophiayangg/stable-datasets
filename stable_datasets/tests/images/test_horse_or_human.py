@@ -1,4 +1,3 @@
-
 """Horses vs. Humans tests using local ZIP archives and the real dataset."""
 
 import io
@@ -172,13 +171,9 @@ def test_deterministic_order(archive):
     first = _load_rows(archive)
     second = _load_rows(archive)
 
-    assert [key for key, _ in first] == [
-        key for key, _ in second
-    ]
+    assert [key for key, _ in first] == [key for key, _ in second]
 
-    assert [sample["label"] for _, sample in first] == [
-        sample["label"] for _, sample in second
-    ]
+    assert [sample["label"] for _, sample in first] == [sample["label"] for _, sample in second]
 
 
 def test_metadata():

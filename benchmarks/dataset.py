@@ -168,14 +168,6 @@ DATASET_CONFIGS: dict[str, DatasetConfig] = {
         mean=[0.4459, 0.4528, 0.3350],
         std=[0.2731, 0.2659, 0.2797],
     ),
-    "horse_or_human": _rgb(
-        "horse_or_human",
-        "Horses vs Humans",
-        2,
-        mean=[0.5, 0.5, 0.5],
-        std=[0.5, 0.5, 0.5],
-        builder_name="HorseOrHuman",
-    ),
     "imagenet100": _rgb("imagenet100", "ImageNet-100", 100, builder_name="ImageNet100"),
     # Grayscale datasets (1-channel) — includes character/line-art datasets
     # whose images are visually binary (ink-on-paper) regardless of source channel count.
@@ -322,7 +314,6 @@ DATASET_CONFIGS: dict[str, DatasetConfig] = {
         builder_kwargs={"config_name": "organsmnist"},
     ),
     "notmnist": _gray("notmnist", "NotMNIST", 10, mean=[0.4178], std=[0.4532]),
-    "semeion": _gray("semeion", "Semeion", 10, mean=[0.5], std=[0.5]),
     "hasyv2": _gray(
         "hasyv2",
         "HASYv2",

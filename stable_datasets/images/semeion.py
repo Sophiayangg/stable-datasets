@@ -14,17 +14,34 @@ from stable_datasets.utils import BaseDatasetBuilder
 
 
 class Semeion(BaseDatasetBuilder):
-    """Semeion Handwritten Digit Dataset."""
+    """Semeion handwritten digit classification dataset.
+
+    Contains 1,593 grayscale images of handwritten digits (0-9).
+    Each image is 16x16 pixels, represented by 256 binary pixel
+    values in the original dataset.
+
+    The original dataset has no predefined train/test split.
+    This implementation uses NumPy's random generator with seed 42
+    to create a reproducible 80/20 split:
+    - train: 1,274 images
+    - test: 319 images
+
+    Each example returns a PIL grayscale image and an integer
+    label between 0 and 9.
+    """
 
     VERSION = Version("1.0.0")
 
     SOURCE = DatasetSource(
         homepage="https://archive.ics.uci.edu/dataset/178/semeion+handwritten+digit",
-        citation=(
-            "Semeion Research Center of Sciences of Communication, "
-            "Semeion Handwritten Digit Dataset, "
-            "UCI Machine Learning Repository."
-        ),
+        license="CC BY 4.0",
+        citation="""@misc{semeion,
+        author = {{Semeion Research Center of Sciences of Communication}},
+        title = {Semeion Handwritten Digit Dataset},
+        howpublished = {UCI Machine Learning Repository},
+        url = {https://archive.ics.uci.edu/dataset/178/semeion+handwritten+digit},
+        doi = {10.24432/C5SC8V}
+        }""",
         assets={
             "train": DownloadInfo(
                 url="https://archive.ics.uci.edu/ml/machine-learning-databases/semeion/semeion.data"
@@ -45,6 +62,7 @@ class Semeion(BaseDatasetBuilder):
             supervised_keys=("image", "label"),
             homepage=self.SOURCE["homepage"],
             citation=self.SOURCE["citation"],
+            license=self.SOURCE["license"],
         )
 
     def _generate_examples(self, data_path, split):

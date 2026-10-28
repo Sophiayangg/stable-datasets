@@ -39,6 +39,10 @@ No separate validation split is provided.
 The original validation split is exposed as the ``test``
 split for consistency with other datasets in this library.
 
+.. image:: teasers/horse_or_human_teaser.png
+   :align: center
+   :width: 90%
+
 Data Structure
 --------------
 
@@ -179,6 +183,7 @@ References
 - `TensorFlow Datasets: Horses or Humans <https://www.tensorflow.org/datasets/catalog/horses_or_humans>`_
 - `Training dataset <https://storage.googleapis.com/learning-datasets/horse-or-human.zip>`_
 - `Validation dataset <https://storage.googleapis.com/learning-datasets/validation-horse-or-human.zip>`_
+- **License**: `Creative Commons Attribution 2.0 (CC BY 2.0) <https://creativecommons.org/licenses/by/2.0/>`_
 
 Citation
 --------

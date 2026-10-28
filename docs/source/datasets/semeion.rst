@@ -78,6 +78,10 @@ using the index of the active class.
 Labels range from 0 through 9 and correspond directly to the
 represented handwritten digit.
 
+.. image:: teasers/semeion_teaser.png
+   :align: center
+   :width: 90%
+
 Data Structure
 --------------
 
@@ -235,10 +239,17 @@ References
 - `UCI Semeion dataset page <https://archive.ics.uci.edu/dataset/178/semeion+handwritten+digit>`_
 - `Original Semeion data file <https://archive.ics.uci.edu/ml/machine-learning-databases/semeion/semeion.data>`_
 - `UCI Machine Learning Repository <https://archive.ics.uci.edu/>`_
+- **License**: `Creative Commons Attribution 4.0 International (CC BY 4.0) <https://creativecommons.org/licenses/by/4.0/>`_
 
 Citation
 --------
 
-Semeion Research Center of Sciences of Communication,
-Semeion Handwritten Digit Dataset,
-UCI Machine Learning Repository.
+.. code-block:: bibtex
+
+    @misc{semeion,
+      author = {{Semeion Research Center of Sciences of Communication}},
+      title = {Semeion Handwritten Digit Dataset},
+      howpublished = {UCI Machine Learning Repository},
+      url = {https://archive.ics.uci.edu/dataset/178/semeion+handwritten+digit},
+      doi = {10.24432/C5SC8V}
+    }

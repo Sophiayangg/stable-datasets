@@ -104,13 +104,9 @@ def test_reproducible_split(data_file):
     first_test = _load_rows(data_file, "test")
     second_test = _load_rows(data_file, "test")
 
-    assert [key for key, _ in first_train] == [
-        key for key, _ in second_train
-    ]
+    assert [key for key, _ in first_train] == [key for key, _ in second_train]
 
-    assert [key for key, _ in first_test] == [
-        key for key, _ in second_test
-    ]
+    assert [key for key, _ in first_test] == [key for key, _ in second_test]
 
     for first, second in zip(first_train, second_train):
         np.testing.assert_array_equal(
@@ -131,15 +127,9 @@ def test_no_split_overlap(data_file):
     train = _load_rows(data_file, "train")
     test = _load_rows(data_file, "test")
 
-    train_images = {
-        np.asarray(sample["image"]).tobytes()
-        for _, sample in train
-    }
+    train_images = {np.asarray(sample["image"]).tobytes() for _, sample in train}
 
-    test_images = {
-        np.asarray(sample["image"]).tobytes()
-        for _, sample in test
-    }
+    test_images = {np.asarray(sample["image"]).tobytes() for _, sample in test}
 
     assert train_images.isdisjoint(test_images)
 
@@ -173,9 +163,7 @@ def test_metadata():
     assert info.supervised_keys == ("image", "label")
     assert set(info.features) == {"image", "label"}
 
-    assert info.features["label"].names == [
-        str(i) for i in range(10)
-    ]
+    assert info.features["label"].names == [str(i) for i in range(10)]
 
 
 def test_real_data():

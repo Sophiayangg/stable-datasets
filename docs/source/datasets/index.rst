@@ -72,6 +72,7 @@ Available Datasets
    rock_paper_scissor
    linnaeus5
    horse_or_human
+   semeion
 
 .. toctree::
    :maxdepth: 1
