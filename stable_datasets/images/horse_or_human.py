@@ -36,10 +36,12 @@ class HorseOrHuman(BaseDatasetBuilder):
 
     SOURCE = DatasetSource(
         homepage="https://www.tensorflow.org/datasets/catalog/horses_or_humans",
-        citation="""@misc{moroney_horses_or_humans,
+        citation="""@misc{horses_or_humans,
         author = {Laurence Moroney},
         title = {Horses or Humans Dataset},
-        url = {https://www.tensorflow.org/datasets/catalog/horses_or_humans}
+        month = feb,
+        year = {2019},
+        url = {http://laurencemoroney.com/horses-or-humans-dataset}
         }""",
         license="CC BY 2.0",
         assets={

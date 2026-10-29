@@ -35,12 +35,11 @@ class Semeion(BaseDatasetBuilder):
     SOURCE = DatasetSource(
         homepage="https://archive.ics.uci.edu/dataset/178/semeion+handwritten+digit",
         license="CC BY 4.0",
-        citation="""@misc{semeion,
-        author = {{Semeion Research Center of Sciences of Communication}},
-        title = {Semeion Handwritten Digit Dataset},
+        citation="""@misc{semeion_handwritten_digit_178,
+        title        = {{Semeion Handwritten Digit}},
+        year         = {1998},
         howpublished = {UCI Machine Learning Repository},
-        url = {https://archive.ics.uci.edu/dataset/178/semeion+handwritten+digit},
-        doi = {10.24432/C5SC8V}
+        note         = {{DOI}: https://doi.org/10.24432/C5SC8V}
         }""",
         assets={
             "train": DownloadInfo(

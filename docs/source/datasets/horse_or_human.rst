@@ -190,8 +190,10 @@ Citation
 
 .. code-block:: bibtex
 
-    @misc{moroney_horses_or_humans,
-      author = {Laurence Moroney},
-      title = {Horses or Humans Dataset},
-      url = {https://www.tensorflow.org/datasets/catalog/horses_or_humans}
-    }
+    @misc{horses_or_humans,
+    author = {Laurence Moroney},
+    title = {Horses or Humans Dataset},
+    month = feb,
+    year = {2019},
+    url = {http://laurencemoroney.com/horses-or-humans-dataset}
+}
